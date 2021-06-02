@@ -9,6 +9,10 @@ Segment.initialize({
 });
 
 export default function App() {
+  React.useEffect(() => {
+    Segment.track("test");
+  }, []);
+
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
